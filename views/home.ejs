@@ -1,0 +1,7 @@
+<%- include("partials/header.ejs") %>
+<div class="flex flex-col items-center">
+<% for(let c of blogs){ %>
+<a class="w-11/12" href="<%= `/view/${c.id}` %>"><div class="border-2 text-center py-4 mt-4 hover:shadow hover:text-white hover:bg-purple-400"> <%= c.title %></div></a>
+<% } %>
+</div>
+<%- include("partials/footer.ejs") %>

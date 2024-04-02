@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs') %>
+
+<form class="flex flex-col gap-2 items-center" action="/new/create" method="post">
+    <label for="title">Title</label><br>
+    <input class="border-black border-2 rounded-md w-1/2 p-4 text-center" type="text" id="title" name="title" required maxlength="50"><br>
+    <label for="desp">What do you want to Say?</label><br>
+    <textarea class="border-black border-2 rounded-m text-center p-4 w-3/4" type="text" id="desp" name="desp" rows="10" required></textarea>
+    <br>
+    <button class="bg-purple-500 rounded-md p-2 text-white" type="submit">Submit</button>
+</form>
+
+<%- include('partials/footer.ejs') %>
